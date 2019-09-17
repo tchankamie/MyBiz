@@ -1,4 +1,4 @@
-package com.example.mybiz;
+package com.example.Delivery_Section;
 
 import android.Manifest;
 import android.content.Intent;
@@ -18,11 +18,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-public class SearchCreditor extends AppCompatActivity {
+import com.example.mybiz.R;
+
+public class SearchDeliverer extends AppCompatActivity {
 
     TextView display_phone, display_amount, display_date;
     EditText search_name;
-    DBhelper dBhelper;
+    DBhelper1 dBhelper;
     SQLiteDatabase sqLiteDatabase;
     String searchname;
 
@@ -31,11 +33,11 @@ public class SearchCreditor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_creditor);
+        setContentView(R.layout.activity_search_deliverer);
 
         search_name = findViewById(R.id.searchtxtc);
 
-        display_amount = findViewById(R.id.search_amount);
+        display_amount = findViewById(R.id.search_id);
         display_phone  = findViewById(R.id.search_phone);
         display_date   = findViewById(R.id.search_date);
 
@@ -87,7 +89,7 @@ public class SearchCreditor extends AppCompatActivity {
     public void searchCreditor(View view) {
 
         searchname      = search_name.getText().toString();
-        dBhelper        = new DBhelper(getApplicationContext());
+        dBhelper        = new DBhelper1(getApplicationContext());
         sqLiteDatabase  = dBhelper.getReadableDatabase();
 
         Cursor cursor   = dBhelper.getCDetails(searchname,sqLiteDatabase);
@@ -108,13 +110,13 @@ public class SearchCreditor extends AppCompatActivity {
     }
 
     public void backhome (View view){
-        Intent intent =  new Intent(this, MainActivity.class);
+        Intent intent =  new Intent(this, DelivereyHome.class);
         startActivity(intent);
     }
 
     public void dltcreditor(View view){
 
-        dBhelper        = new DBhelper(getApplicationContext());
+        dBhelper        = new DBhelper1(getApplicationContext());
         sqLiteDatabase  = dBhelper.getReadableDatabase();
 
         dBhelper.deleteCreditors(searchname,sqLiteDatabase);

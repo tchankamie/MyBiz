@@ -1,4 +1,4 @@
-package com.example.mybiz;
+package com.example.Delivery_Section;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,24 +10,26 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AddCreditor extends AppCompatActivity {
+import com.example.mybiz.R;
 
-    EditText name,phone,amount,date;
+public class AddDeliverer extends AppCompatActivity {
+
+    EditText name,phone,id,date;
     Context context = this;
-    DBhelper dBhelper;
+    DBhelper1 dBhelper;
     SQLiteDatabase sqLiteDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_creditor);
+        setContentView(R.layout.activity_add_deliverer);
 
         Intent secondIntent = getIntent();
 
         name    = findViewById(R.id.add_namec);
         phone   = findViewById(R.id.add_phonec);
-        amount  = findViewById(R.id.add_amountc);
+        id  = findViewById(R.id.add_id);
         date    = findViewById(R.id.add_datec);
 
     }
@@ -37,13 +39,13 @@ public class AddCreditor extends AppCompatActivity {
 
         String cname     = name.getText().toString();
         String cphone    = phone.getText().toString();
-        String camount   = amount.getText().toString();
+        String cid   = id.getText().toString();
         String cdate     = date.getText().toString();
 
-        dBhelper         = new DBhelper(context);
+        dBhelper         = new DBhelper1(context);
         sqLiteDatabase  = dBhelper.getWritableDatabase();
 
-        dBhelper.addCreditorInfo(cname,cphone,camount,cdate,sqLiteDatabase);
+        dBhelper.addCreditorInfo(cname,cphone,cid,cdate,sqLiteDatabase);
 
         Toast.makeText(getBaseContext(),"Data Saved",Toast.LENGTH_LONG).show();
 
@@ -54,7 +56,7 @@ public class AddCreditor extends AppCompatActivity {
     public void clearAll(View view){
         name.setText("");
         phone.setText("");
-        amount.setText("");
+        id.setText("");
         date.setText("");
     }
 

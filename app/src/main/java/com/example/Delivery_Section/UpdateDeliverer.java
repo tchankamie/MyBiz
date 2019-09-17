@@ -1,4 +1,4 @@
-package com.example.mybiz;
+package com.example.Delivery_Section;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -11,23 +11,25 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class UpdateCreditors extends AppCompatActivity {
+import com.example.mybiz.R;
+
+public class UpdateDeliverer extends AppCompatActivity {
 
     TextView titlec_txt;
     EditText searchc_name ,newc_name, newc_phone, newc_amount, newc_date;
-    DBhelper dBhelper;
+    DBhelper1 dBhelper;
     SQLiteDatabase sqLiteDatabase;
     String searchnamec, Newnamec, Newphonec, Newamountc, Newdatec;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update_creditors);
+        setContentView(R.layout.activity_update_deliverer);
 
         searchc_name = findViewById(R.id.supdatetxt);
 
         newc_name = findViewById(R.id.update_name);
-        newc_amount = findViewById(R.id.update_amount);
+        newc_amount = findViewById(R.id.update_id);
         newc_phone  = findViewById(R.id.update_phone);
         newc_date   = findViewById(R.id.update_date);
 
@@ -43,7 +45,7 @@ public class UpdateCreditors extends AppCompatActivity {
     }
 
     public void backhome (View view){
-        Intent intent =  new Intent(this, MainActivity.class);
+        Intent intent =  new Intent(this, DelivereyHome.class);
         startActivity(intent);
     }
 
@@ -52,7 +54,7 @@ public class UpdateCreditors extends AppCompatActivity {
 
     public void updatecreditor(View view){
 
-    dBhelper = new DBhelper(getApplicationContext());
+    dBhelper = new DBhelper1(getApplicationContext());
     sqLiteDatabase = dBhelper.getWritableDatabase();
 
     String namec, phonec, amountc, datec;
@@ -76,7 +78,7 @@ public class UpdateCreditors extends AppCompatActivity {
     public void searchCreditor(View view) {
 
         searchnamec      = searchc_name.getText().toString();
-        dBhelper        = new DBhelper(getApplicationContext());
+        dBhelper        = new DBhelper1(getApplicationContext());
         sqLiteDatabase  = dBhelper.getReadableDatabase();
 
         Cursor cursor   = dBhelper.getCDetails(searchnamec,sqLiteDatabase);

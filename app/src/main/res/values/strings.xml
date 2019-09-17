@@ -1,29 +1,30 @@
 <resources>
     <string name="app_name">MyBiz</string>
 
-    <string name="add_btn">Add Creditor</string>
-    <string name="view_btn">View Creditor</string>
-    <string name="txt_creditor">CREDITORS</string>
+    <string name="add_btn">Add Deliverer</string>
+    <string name="view_btn">View Deliverer</string>
+    <string name="txt_creditor">DELIVERER</string>
 
     <string name="txt_debitor">DEBITORS</string>
 
 
     <!--    bskvj-->
-    <string name="home_c">CREDITORS</string>
+    <string name="home_c">DELIVERER</string>
 
     <string name="home_d">DEBITORS</string>
 
 
-    <string name="txt_addcreditor">ADD CREDITORS</string>
+    <string name="txt_addDeliverer">Delivery Home</string>
     <string name="add_namec"></string>
     <string name="add_phonec"></string>
-    <string name="add_amountc"></string>
+    <string name="add_id"></string>
     <string name="add_datec"></string>
     <string name="savec_btn">SAVE DETAILS</string>
     <string name="clearc_btn">CLEAR ALL</string>
 
     <string name="txt_searchc">SEARCH HERE</string>
     <string name="searchtxtc"></string>
+
     <string name="btn_searchback">BACK </string>
     <string name="btn_dlt">DELETE </string>
 
@@ -32,24 +33,7 @@
     <string name="update_name"></string>
     <string name="btn_updateback">BACK </string>
     <string name="btn_update">UPDATE</string>
-
-
-
-
-
-
-    <string name="txt_income">INCOME</string>
-
-    <string name="txt_add_income">ADD INCOME</string>
-    <string name="add_income_source"></string>
-    <string name="add_income_date"></string>
-    <string name="add_income_amount"></string>
-    <string name="save_income_btn">SAVE DETAILS</string>
-    <string name="clear_income_btn">CLEAR ALL</string>
-    <string name="txt_update_income">UPDATE INCOME</string>
-    <string name="update_income_source"></string>
-    <string name="update_income_date"></string>
-    <string name="update_income_amount"></string>
+    <string name="txt_addDeliverer1">ADD DELIVERY</string>
 
 
 </resources>

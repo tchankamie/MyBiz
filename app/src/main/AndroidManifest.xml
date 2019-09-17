@@ -9,18 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityDashboard"></activity>
-        <activity android:name=".ActivityUpdateIncome" />
-        <activity android:name=".SearchIncomeActivity" />
-        <activity android:name=".ViewIncomeActivity" />
-        <activity android:name=".ActivityAddIncome" />
-        <activity android:name=".UpdateCreditors" />
-        <activity android:name=".SearchCreditor" />
-        <activity android:name=".ListCreditors" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".IncomeMainActivity" />
-        <activity android:name=".AddCreditor" />
-        <activity android:name=".HOME">
+        <activity android:name="com.example.Delivery_Section.assign_delivery"></activity>
+        <activity android:name="com.example.Delivery_Section.UpdateDeliverer" />
+        <activity android:name="com.example.Delivery_Section.SearchDeliverer" />
+        <activity android:name="com.example.Delivery_Section.ListCreditors" />
+        <activity android:name="com.example.Delivery_Section.DelivereyHome" />
+        <activity android:name="com.example.Delivery_Section.AddDeliverer" />
+        <activity android:name="com.example.Delivery_Section.HOME">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,6 +24,6 @@
         </activity>
     </application>
 
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

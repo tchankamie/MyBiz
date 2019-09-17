@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1f1f2e"
-    tools:context=".SearchCreditor">
+    android:background="@drawable/blue"
+    tools:context="com.example.Delivery_Section.SearchDeliverer">
 
     <TextView
         android:id="@+id/txt_searchcreditor"
@@ -14,16 +14,16 @@
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="48dp"
-        android:background="#52527a "
+
         android:cursorVisible="true"
         android:text="@string/txt_searchc"
         android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textColorHighlight="@android:color/background_light"
-        android:textColorHint="@android:color/background_light"
-        android:textColorLink="@android:color/background_light"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textColorLink="@color/cardview_dark_background"
         android:textCursorDrawable="@android:drawable/alert_light_frame"
-        android:textSize="30sp"
+        android:textSize="38sp"
         app:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,29 +33,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <EditText
-        android:id="@+id/searchtxtc"
-        android:layout_width="272dp"
-        android:layout_height="38dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="169dp"
-        android:background="#9595b7"
-        android:ems="10"
-        android:hint="Enter Name"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textSize="24sp"
-        tools:text="@string/searchtxtc" />
+
+        <EditText
+            android:id="@+id/searchtxtc"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="169dp"
+            android:background="#9595b7"
+            android:ems="10"
+            android:hint="          Enter Name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
+            tools:text="@string/searchtxtc" />
 
         <ImageView
             android:id="@+id/searchc_img"
             android:layout_width="wrap_content"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
             android:layout_marginTop="169dp"
             android:background="#9595b7"
@@ -74,39 +75,39 @@
 
         <TextView
             android:id="@+id/search_phone"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="PHONE NUMBER"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#FFFFFF"
+            android:layout_width="350dp"
+            android:layout_height="41dp"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="250dp"
-            android:background="#9595b7"/>
+            android:background="#EAF2F8"
+            android:text="               PHONE NUMBER"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background" />
 
         <TextView
-            android:id="@+id/search_amount"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="AMOUNT"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#FFFFFF"
+            android:id="@+id/search_id"
+            android:layout_width="353dp"
+            android:layout_height="41dp"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
-            android:background="#9595b7"/>
+            android:background="#EAF2F8"
+            android:text="                          ID"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background" />
 
         <TextView
             android:id="@+id/search_date"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="DATE"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#FFFFFF"
+            android:layout_width="351dp"
+            android:layout_height="44dp"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
-            android:background="#9595b7"/>
+            android:background="#EAF2F8"
+            android:text="                         DATE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background" />
 
 
 
@@ -120,7 +121,7 @@
         android:layout_marginStart="33dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="432dp"
-        android:background="#52527a"
+        android:background="#151B54"
         android:gravity="center"
         android:onClick="dltcreditor"
         android:text="@string/btn_dlt"
@@ -134,7 +135,7 @@
         android:layout_marginStart="33dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="432dp"
-        android:background="#52527a"
+        android:background="#151B54"
         android:gravity="center"
         android:onClick="backhome"
         android:text="@string/btn_searchback"
@@ -155,7 +156,7 @@
             android:layout_marginTop="490dp"
             android:gravity="center"
             android:src="@drawable/ic_phone"
-            android:background="#52527a" />
+            android:background="#151B54" />
 
 
     </LinearLayout>

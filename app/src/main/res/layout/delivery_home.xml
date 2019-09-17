@@ -6,15 +6,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#1f1f2e"
+        android:background="@drawable/blue"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context="com.example.Delivery_Section.DelivereyHome">
 
 
-
-
-    <TextView
-        android:id="@+id/txt_addcreditor"
+        <TextView
+        android:id="@+id/txt_addDeliverer1"
         android:layout_width="243dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
@@ -22,7 +20,7 @@
         android:layout_marginTop="30dp"
         android:background="#52527a "
         android:cursorVisible="true"
-        android:text="@string/txt_creditor"
+        android:text="@string/txt_addDeliverer"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -33,7 +31,7 @@
         app:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="CREDITORS" />
+        tools:text="@string/txt_addDeliverer" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +52,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
-                android:onClick="pressAdd"
+                android:onClick="add_w"
                 android:orientation="vertical">
 
                 <ImageView
@@ -68,7 +66,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="ADD CREDITOR"
+                    android:text="ADD DELIVERER"
                     android:textColor="@color/cardview_light_background"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -86,7 +84,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
-                android:onClick="viewCreditors"
+                android:onClick="view_w"
                 android:orientation="vertical">
 
                 <ImageView
@@ -100,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="VIEW CREDITORS"
+                    android:text="VIEW DELIVERER"
                     android:textColor="@color/cardview_light_background"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -126,7 +124,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
-                android:onClick="searchCreditors"
+                android:onClick="search_w"
                 android:orientation="vertical">
 
                 <ImageView
@@ -158,8 +156,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#52527a"
-                android:onClick="updtCreditors"
                 android:gravity="center"
+                android:onClick="update_w"
                 android:orientation="vertical">
 
                 <ImageView
@@ -198,8 +196,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#52527a"
-                android:onClick="dltCreditors"
                 android:gravity="center"
+                android:onClick="remove_w"
                 android:orientation="vertical">
 
                 <ImageView
@@ -207,14 +205,14 @@
                     android:layout_height="64dp"
                     android:background="#9595b7"
                     android:padding="10dp"
-                    android:src="@drawable/ic_delete_black_24dp" />
+                    android:src="@drawable/ic_shopping_cart" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:text="REMOVE"
+                    android:text="DELETE DELIVERER"
                     android:textColor="@color/cardview_light_background"
                     android:textStyle="bold" />
             </LinearLayout>

@@ -1,10 +1,12 @@
-package com.example.mybiz;
+package com.example.Delivery_Section;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.mybiz.R;
 
 public class HOME extends AppCompatActivity {
 
@@ -15,13 +17,9 @@ public class HOME extends AppCompatActivity {
 
     }
 
-    public void goIncomes(View view){
-        Intent intent=new Intent(this,IncomeMainActivity.class);
-        startActivity(intent);
-    }
 
     public void goCreditors(View view){
-        Intent intent=new Intent(this,MainActivity.class);
+        Intent intent=new Intent(this, DelivereyHome.class);
         startActivity(intent);
     }
 

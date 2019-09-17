@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListCreditors"
-    android:background="#1f1f2e">
+    tools:context="com.example.Delivery_Section.ListCreditors"
+    android:background="@drawable/blue">
 
     <ListView
+        android:id="@+id/creditor_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/creditor_list"></ListView>
+        android:layout_height="705dp">
 
+
+    </ListView>
 
 
 </RelativeLayout>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1f1f2e"
-    tools:context=".UpdateCreditors">
+    android:background="@drawable/blue"
+    tools:context="com.example.Delivery_Section.UpdateDeliverer">
 
 
     <TextView
@@ -15,15 +15,15 @@
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="48dp"
-        android:background="#52527a "
+
         android:cursorVisible="true"
         android:text="@string/txt_updatec"
         android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textColorHighlight="@android:color/background_light"
-        android:textColorHint="@android:color/background_light"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
         android:textColorLink="@android:color/background_light"
-        android:textCursorDrawable="@android:drawable/alert_light_frame"
+        android:textCursorDrawable="@color/cardview_dark_background"
         android:textSize="30sp"
         app:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,10 +35,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <EditText
             android:id="@+id/supdatetxt"
-            android:layout_width="272dp"
-            android:layout_height="38dp"
+            android:layout_width="267dp"
+            android:layout_height="44dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -49,15 +50,15 @@
             android:ems="10"
             android:hint="Enter Name"
             android:inputType="textPersonName"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
+            android:textColor="@color/cardview_dark_background"
+            android:textColorHint="@color/cardview_dark_background"
             android:textSize="24sp"
             tools:text="@string/supdatetxt" />
 
         <ImageView
             android:id="@+id/supdatec_img"
             android:layout_width="wrap_content"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
             android:layout_marginTop="169dp"
             android:background="#9595b7"
@@ -70,61 +71,57 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
-        
+
         <EditText
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
             android:id="@+id/update_name"
-            android:hint="NAME HERE"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="43dp"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="250dp"
-            android:background="#9595b7"
-            />
+            android:background="#EAF2F8"
+            android:hint="                     NAME HERE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background" />
 
         <EditText
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
             android:id="@+id/update_phone"
-            android:hint="PHONE HERE"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
-            android:background="#9595b7"
-            />
+            android:background="#EAF2F8"
+            android:hint="                    PHONE HERE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background" />
 
         <EditText
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:id="@+id/update_amount"
-            android:hint="CHANGE AMOUNT"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#FFFFFF"
+            android:id="@+id/update_id"
+            android:layout_width="340dp"
+            android:layout_height="41dp"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
-            android:background="#9595b7"
-            />
+            android:background="#EAF2F8"
+            android:hint="                   CHANGE ID"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background" />
 
         <EditText
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
             android:id="@+id/update_date"
-            android:hint="DATE HERE"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#FFFFFF"
+            android:layout_width="342dp"
+            android:layout_height="40dp"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
-            android:background="#9595b7"
-            />
+            android:background="#EAF2F8"
+            android:hint="                  DATE HERE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background" />
 
     </LinearLayout>
 
@@ -136,27 +133,11 @@
         android:layout_marginStart="33dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="490dp"
-        android:background="#52527a"
-        android:gravity="center"
+        android:background="#151B54"
+        android:gravity="bottom"
         android:onClick="updatecreditor"
         android:text="@string/btn_update"
         android:textSize="24dp" />
-
-
-    <Button
-        android:id="@+id/btn_searchback"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="490dp"
-        android:background="#52527a"
-        android:gravity="center"
-        android:onClick="backhome"
-        android:text="@string/btn_updateback"
-        android:textSize="24dp"
-        android:layout_centerHorizontal="true"/>
-
 
 
 </RelativeLayout>

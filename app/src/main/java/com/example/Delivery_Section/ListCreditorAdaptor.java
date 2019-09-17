@@ -1,4 +1,4 @@
-package com.example.mybiz;
+package com.example.Delivery_Section;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.mybiz.R;
 
 import java.util.ArrayList;
 import java.util.List;
