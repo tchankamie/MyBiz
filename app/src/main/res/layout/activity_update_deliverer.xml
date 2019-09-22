@@ -22,9 +22,9 @@
         android:textColor="@color/cardview_dark_background"
         android:textColorHighlight="@color/cardview_dark_background"
         android:textColorHint="@color/cardview_dark_background"
-        android:textColorLink="@android:color/background_light"
-        android:textCursorDrawable="@color/cardview_dark_background"
-        android:textSize="30sp"
+        android:textColorLink="@color/cardview_dark_background"
+        android:textCursorDrawable="@android:drawable/alert_light_frame"
+        android:textSize="32sp"
         app:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -128,16 +128,16 @@
 
     <Button
         android:id="@+id/btn_update"
-        android:layout_width="100dp"
+        android:layout_width="258dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="490dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="525dp"
         android:background="#151B54"
         android:gravity="bottom"
         android:onClick="updatecreditor"
-        android:text="@string/btn_update"
-        android:textSize="24dp" />
+        android:text="          UPDATE"
+        android:textSize="30dp" />
 
 
 </RelativeLayout>

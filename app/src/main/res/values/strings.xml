@@ -22,6 +22,7 @@
     <string name="savec_btn">SAVE DETAILS</string>
     <string name="clearc_btn">CLEAR ALL</string>
 
+
     <string name="txt_searchc">SEARCH HERE</string>
     <string name="searchtxtc"></string>
 
@@ -34,6 +35,9 @@
     <string name="btn_updateback">BACK </string>
     <string name="btn_update">UPDATE</string>
     <string name="txt_addDeliverer1">ADD DELIVERY</string>
+    <string name="ADAssignId">Order ID</string>
+    <string name="ADDeliryPersn">Delivery Person</string>
+    <string name="ADDelivery">Add Details</string>
 
 
 </resources>
